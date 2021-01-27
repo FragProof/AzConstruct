@@ -1,0 +1,260 @@
+.background-overlay {
+    background-image: url('headere.jpg');
+    height: 1200px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+/* TopNav */
+
+.fa-bars {
+    padding-right: 10px;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    overflow: hidden;
+    padding-top: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .background-overlay {
+        background-image: url('headere\ mobile.jpg');
+        background-size: auto;
+        background-repeat: repeat-y;
+        height: 800px;
+    }
+}
+
+#logo:hover {
+    opacity: 70%;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(0, 102, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    color: white;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+a.logo {
+    float: right;
+    padding: 0;
+}
+
+#logo {
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+
+/* MotoHeader*/
+
+.motoheader-wrap {
+    height: 750px;
+}
+
+#motoheader {
+    color: rgb(0, 102, 255);
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.servicii-button {
+    text-align: center;
+}
+
+.servicii-button a {
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    padding: 10px 12px;
+    background-color: blue;
+    border-radius: 40px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+.servicii-button a:hover {
+    color: white;
+    background-color: rgb(0, 0, 114);
+}
+
+
+/* Content */
+
+.content-wrap {
+    position: sticky;
+    width: 100%;
+    height: 1700px;
+    background-color: white;
+}
+
+.header-content {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-container {
+    position: relative;
+    display: inline;
+    float: left;
+    width: 700px;
+}
+
+.about-container p {
+    text-indent: 25px;
+    font-size: 27px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .about-container {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-container p {
+        text-indent: 10px;
+        font-size: 21px;
+        text-align: center;
+    }
+}
+
+.indent {
+    display: block;
+    text-indent: 25px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.img1-wrap {
+    position: absolute;
+}
+
+#img1 {
+    max-width: 40%;
+    max-height: auto;
+}
+
+
+/*FooterNav*/
+
+.footerbox {
+    background-color: gray;
+    padding-top: 10px;
+}
+
+.footernav {
+    text-align: center;
+}
+
+.footernav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.footernav a:hover {
+    color: white;
+}
+
+.socialmedianav {
+    text-align: center;
+}
+
+.socialmedianav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.socialmedianav a:hover {
+    color: white;
+}
+
+#mail-button {
+    font-size: 19px;
+}
+
+#footer-about {
+    font-size: 18px;
+}
